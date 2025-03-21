@@ -18,8 +18,8 @@ function App() {
     prism.highlightAll()
   }, [])
 
-  async function reviewCode() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+  async function reviewCode()  {
+    const response = await axios.post('https://code-review-1-34f6.onrender.com/ai/get-review', { code })
     setReview(response.data)
   }
 
